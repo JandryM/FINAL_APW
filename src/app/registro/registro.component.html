@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Registro</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <h2 class="logo">
+        <a href="https://www.uleam.edu.ec/"
+          ><img src="/assets/logo.png" alt="" class="img"
+        /></a>
+      </h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="index"><i class="fas fa-sign-in-alt"></i>Iniciar Sesión</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="todo">
+      <form class="form" id="form" [formGroup]="formReg" (ngSubmit)="onSubmit()" (submit)="validarFormulario($event)">
+        <div class="contenedor">
+          <h1>
+            Registro de Estudiantes con Capacidades Especiales en la ULEAM
+          </h1>
+          <div class="botons name">
+            <p class="warnings"></p>
+            <input 
+              class="boton"
+              type="text"
+              id="name"
+              placeholder="Nombres Completos"
+            />
+            <label for="nombre"></label>
+          </div>
+          <div class="botons cedu">
+            <p class="warnings"></p>
+            <input
+              class="boton"
+              type="text"
+              id="cedu"
+              placeholder="C&eacute;dula"
+            />
+            <label for="cedu"></label>
+          </div>
+          <div class="botons correo">
+            <p class="warnings"></p>
+            <input formControlName="email"
+              class="boton"
+              type="email"
+              id="correo"
+              placeholder="E-mail"
+            />
+            <label for="correo"></label>
+          </div>
+          <div class="botons celular">
+            <p class="warnings"></p>
+            <input
+              class="boton"
+              type="text"
+              id="celular"
+              placeholder="Celular"
+            />
+            <label for="celular"></label>
+          </div>
+          <div class="botons phonerepre">
+            <p class="warnings"></p>
+            <input
+              class="boton"
+              type="text"
+              placeholder="Celular del Representante"
+              id="phonerepre"
+            />
+            <label for="phonerepre"></label>
+          </div>
+          <div class="botons dire">
+            <p class="warnings"></p>
+            <input
+              class="boton"
+              type="text"
+              id="dire"
+              placeholder="Direcci&oacute;n"
+            />
+            <label for="dire"></label>
+          </div>
+
+          <div class="botons text1">
+            <p class="warnings"></p>
+            <span>Tipo de Discapacidad:</span>
+            <br />
+            <select class="desple" id="text1">
+              <option value="0" disabled selected>Seleccione</option>
+              <option value="1" class="grado">F&iacutesica</option>
+              <option value="2" class="grado">Intelectual</option>
+              <option value="3" class="grado">Mental</option>
+              <option value="4" class="grado">Psicosocial</option>
+              <option value="5" class="grado">M&uacuteltiple</option>
+              <option value="6" class="grado">Sensorial</option>
+              <option value="7" class="grado">Auditiva</option>
+              <option value="8" class="grado">Otros...</option>
+            </select>
+          </div>
+
+          <div class="botons text2">
+            <p class="warnings"></p>
+            <span>Grado de Dependencia:</span>
+            <br />
+            <select class="desple" id="text2">
+              <option value="0" disabled selected>Seleccione</option>
+              <option value="1" class="grado">
+                Grado 1: Discapacidad Nula
+              </option>
+              <option value="2" class="grado">
+                Grado 2: discapacidad leve
+              </option>
+              <option value="3" class="grado">
+                Grado 3: discapacidad moderada
+              </option>
+              <option value="4" class="grado">
+                Grado 4: discapacidad grave
+              </option>
+              <option value="5" class="grado">
+                Grado 5: discapacidad muy grave
+              </option>
+            </select>
+          </div>
+
+          <div class="botons tipgenero">
+            <p class="warnings"></p>
+            <span>G&eacutenero</span>
+            <div class="genero" id="tipgenero">
+              <label>
+                Masculino
+                <input type="radio" id="tipe1" name="gender" />
+              </label>
+              <label>
+                Femenino
+                <input type="radio" id="tipe2" name="gender" />
+              </label>
+              <label>
+                Prefiero No Responder
+                <input type="radio" id="tipe3" name="gender" />
+              </label>
+            </div>
+          </div>
+          <div class="botons pass">
+            <p class="warnings"></p>
+            <input formControlName="password"
+              class="boton"
+              type="password"
+              id="contraseña"
+              placeholder="Contrase&ntilde;a"
+            />
+            <label for="contraseña"></label>
+          </div>
+          <div class="botons contra">
+            <p class="warnings"></p>
+            <input
+              class="boton"
+              type="password"
+              id="repcontra"
+              placeholder="Repita su Contrase&ntilde;a"
+            />
+            <label for="repcontra"></label>
+          </div>
+          <div class="botons terminosycondiciones">
+            <p class="warnings"></p>
+            <input type="checkbox" id="terminosycondiciones" />He leido y Acepto
+            los <a ><b>Terminos y Condiciones</b></a>
+          </div>
+          <input class="control" type="submit" value="Registrar" />
+          <p>
+            Ya tienes una Cuenta?<a href="index"
+              ><b>Iniciar Sesi&oacute;n</b>
+            </a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

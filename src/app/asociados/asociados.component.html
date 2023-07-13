@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="nav">
+      <h2 class="logo">
+        <a href="https://www.uleam.edu.ec/"
+          ><img src="/assets/logo.png" alt="" class="img"
+        /></a>
+      </h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="inicio"><i class="fas fa-home"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <button id="botonjson" (click)="hola()">Mostrar Datos Mediante JSON</button>
+    <br /><br />
+
+    <table border="1" id="personas">
+      <thead class="tablehead">
+        <tr>
+          <th>NOMBRE</th>
+          <th>APELLIDO</th>
+          <th>FECHA DE NACIMIENTO</th>
+          <th>NACIONALIDAD</th>
+          <th>DISCAPACIDAD</th>
+          <th>CARRERA</th>
+          <th>SEMESTRE</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let items of cosas">
+        <td>{{ items.nombre._text }}</td>
+        <td>{{ items.apellido._text }}</td>
+        <td>{{ items.fechanaci._text }}</td>
+        <td>{{ items.nacionalidad._text }}</td>
+        <td>{{ items.discapacidad._text }}</td>
+        <td>{{ items.carrera._text }}</td>
+        <td>{{ items.semestre._text }}</td>
+      </tbody>
+      <tbody *ngFor="let item of cositas">
+        <td>{{ item.nombree }}</td>
+        <td>{{ item.apellido }}</td>
+        <td>{{ item.fechaNacimientO }}</td>
+        <td>{{ item.NacionalidaD }}</td>
+        <td>{{ item.DiscapacidaD }}</td>
+        <td>{{ item.carrera }}</td>
+        <td>{{ item.semestre }}</td>
+      </tbody>
+    </table>
+  </body>
+</html>

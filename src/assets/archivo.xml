@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persona>
+    <estudiante>
+        <nombre>Camila</nombre>
+        <apellido>Garcia</apellido>
+        <fechanaci>27/05/2000</fechanaci>
+        <nacionalidad>Ecuatoriana</nacionalidad>
+        <genero>Femenino</genero>
+        <estadocivil>Soltera</estadocivil>
+        <cedula>132435673</cedula>
+        <domicilio>Manta</domicilio>
+        <discapacidad>Sensorial</discapacidad>
+        <dependencia>Grado 3 Discapacidad-moderada</dependencia>
+        <carrera>Ingeneria Civil</carrera>
+        <semestre>2do Semestre</semestre>
+        <celular>099452254</celular>
+        <correo>camitoza@gmail.com</correo>
+    </estudiante>
+</persona>

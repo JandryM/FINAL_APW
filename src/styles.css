@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("/assets/fondo.jpg");
+    background-size: cover;
+    object-fit: cover;
+}
+.img{
+    width: 200px;
+    height: 75px;
+    margin: 10px;
+    background-color: aliceblue;
+    border-radius: 5%;
+}
+header{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+  color: #fff
+}
+nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  nav ul li button {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+  }
+  header nav ul li {
+    display: inline-block;
+    margin: 10px;
+    background-color: #b0cfff;
+    border-radius: 5px;
+  }
+  header nav ul li:hover {
+    background-color: #3e1c75;
+  }
+  
+  header nav ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+  }
+  header nav ul li button {
+    display: block;
+    padding: 10px;
+    color: #333;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  header nav ul li a:hover {
+    color: #fff;
+  }
+  header nav ul li button:hover {
+    color: #fff;
+  }
+a{
+    color: rgb(19, 54, 255);
+}
+a:hover{
+    color: rgb(102, 13, 204);
+}
+.contenedor{
+    width: 500px;
+    background-color: rgba(90, 92, 91, 0);
+    padding: 30px;
+    margin: auto;
+    margin-top: 1px;
+    margin-block-end: 100px;
+    border-radius: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+h1{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.boton{
+    width: 100%;
+    background-color: rgb(253, 253, 253);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 2px solid cyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+
+}
+.warnings{
+    color: red;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.contenedor .control{
+    width: 50%;
+    background-color: blue;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 10px 0;
+    font-size: 16px;
+    display: inline-block;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+.contenedor .control:hover{
+    background-color: rgb(183, 0, 255);
+}
+.desple{
+    width: 100%;
+    font-size: 16px;
+    height: 30px;
+    padding: 0 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid cyan;
+    background-color: white;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.9);
+
+}
+.grado{
+    font-size: 16px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+.todo form .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .contenedor .boton{
+    margin: 1px 0 12px 0;
+    width: calc(105% / 1 - 0px);
+}
+.genero{
+    display: flex;
+    width: 120%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.titulosexo{
+    color: white;
+    font-size: 19px;
+}
+.parrafo{
+   
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin: 20px 50px 0 50px;
+    text-align: center;
+    border-radius: 5%;
+}
+h3{
+    font-size: 50px;
+    margin: 30px 0 ;
+    color: rgb(155, 214, 106);
+}
+#modal {
+    position: fixed; /* para que la ventana sea flotante */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* fondo semi-transparente */
+    display: none; /* ocultar por defecto */
+  }
+  
+  #modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centrar la ventana */
+    background-color: rgba(53, 245, 203, 0.959);
+    padding: 20px;
+    border-radius: 4px;
+  }
+#closeModal{
+    border-radius: 4px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background-color: red;
+    transition: 0.3s ease-in-out;
+}
+#closeModal:hover{
+    background-color: #3e1c75;
+}
+.envi{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #1d6d0d;
+    border: none;
+    border-radius: 4px;
+    width: 100px;
+    transition: 0.3s;
+    margin-top: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: bold;
+}
+.envi:hover{
+    background-color: #3e1c75;
+}
+.line{
+    text-decoration: none;
+}
+.conta{
+    float: right;
+    margin-right: 20px;
+    font-size: 3rem;
+}
+.yutu{
+    color: red;
+}
+.twite{
+    color: rgb(8, 160, 233);
+}
+.coreo{
+    color: rgb(8, 160, 233);
+}
+.ubi{
+    color: rgb(238, 70, 48);
+}
+.progra{
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.cita{
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 20rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #6db6b87e;
+    padding: 10px;
+}
+.cita h4{
+    color: #0f2d8f;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.botonci{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0f2d8f54;
+}
+.letra{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    
+}
+.botoncita{
+    color: white;
+    background-color: rgb(19, 54, 255);
+    border: none;
+    border-radius: 4px;
+    width: 30%;
+    height: 30px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 16px;
+    display: inline-block;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.botoncita:hover{
+    background-color: rgb(102, 13, 204);
+}
+.conti{
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+.recur{
+    background-image: linear-gradient(rgba(211, 218, 236, 0.75), rgba(201, 207, 221, 0.75)), url("/assets/fondu.jpg");
+    background-color: #ad5858;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+.imag2{
+    border: none;
+    border-radius: 10px;
+    float: left;
+    width: 500px; 
+    height: 400px;
+}
+.info{
+    padding-left: 20px;
+}
+.titure{
+    text-align: center;
+    color: rgb(224, 57, 57);
+    font-size: 30px;
+}
+.parrare{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.lint{
+    border: none;
+    border-radius: 4px;
+    background-color: #0f2d8f;
+    font-weight: bold;
+    color: #fcfcfc;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.lint:hover{
+    color: rgb(0, 38, 255);
+    background-color: #fff;
+}
+#lint1{
+    position: absolute;
+    right: 300px;
+    padding: 0.8rem;
+   
+}
+#lint2{
+    position: absolute;
+    left: 300px;
+    padding: 0.8rem;
+   
+}
+#titulo{
+    padding-top: 40px;
+   color: white;
+}
+.imagen{
+    border-radius: 50%;
+    border: 1px solid #000000;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+}
+.contenido{
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+div article{
+    background-color: rgba(211, 204, 204, 0.486);
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+footer{
+    background-color: #222;
+    padding: 2rem;
+    color: aliceblue;
+}
+footer div{
+    float: right;
+}
+footer p{
+    margin: 0;
+}
+.fot{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.XML{
+    color: white;
+    background-color: rgb(19, 54, 255);
+    border: none;
+    border-radius: 4px;
+    width: 30%;
+    height: 30px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 16px;
+    display: inline-block;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.tablehead{
+    color: #000000;
+    font-size: 22px;
+    background-color: #ad5858;
+}
+#personas{
+    color: white;
+    margin-top: 10%;
+    margin-left: 10%;
+    background-color: #657de7;
+}
+#botonjson{
+    color: white;
+    background-color: rgb(19, 54, 255);
+    border: none;
+    border-radius: 4px;
+    width: 30%;
+    height: 30px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 16px;
+    display: inline-block;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}

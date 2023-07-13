@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Perfil</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <h2 class="logo">
+        <a href="https://www.uleam.edu.ec/"
+          ><img src="/assets/logo.png" alt="" class="img"
+        /></a>
+      </h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="inicio"><i class="fas fa-home"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <button id="XML" class="XML" (click)="hola()">
+      Mostrar Datos Mediante XML
+    </button>
+    <div class="contenido" id="contenido">
+      <article id="contenido" *ngFor="let items of cosas">
+        <h1 id="titulo">PERFIL DE USUARIO</h1>
+        <img class="imagen" src="/assets/usuario.jpg"/>
+        <h2>DATOS PERSONALES</h2>
+        <br />
+        <p id="nombres"><b>NOMBRES: </b> {{ items.nombre._text }}</p>
+        <br />
+        <p id="apellidos"><b>APELLIDOS: </b>{{ items.apellido._text }}</p>
+        <br />
+        <p id="fechaNacimiento">
+          <b>FECHA DE NACIMIENTO: </b>{{ items.fechanaci._text }}
+        </p>
+        <br />
+        <p id="nacionalidad">
+          <b>NACIONALIDAD: </b>{{ items.nacionalidad._text }}
+        </p>
+        <br />
+        <p id="genero"><b>G&Eacute;NERO: </b> {{ items.genero._text }}</p>
+        <br />
+        <p id="estadoCivil"><b>ESTADO CIVIL:</b>{{ items.estadocivil._text }}</p>
+        <br />
+        <p id="cedula"><b>CEDULA DE IDENTIDAD:</b>{{ items.cedula._text }}</p>
+        <br />
+        <p id="domicilio"><b>DOMICILIO:</b>{{ items.domicilio._text }}</p>
+        <br />
+        <p id="discapacidad"><b>TIPO DE DISCAPACIDAD: </b>{{ items.discapacidad._text }}</p>
+        <br />
+        <p id="dependencia"><b>GRADO DE DEPENDENCIA: </b>{{ items.dependencia._text }}</p>
+        <br />
+        <p id="carrera"><b>CARRERA: </b>{{ items.carrera._text}}</p>
+        <br />
+        <p id="semestre"><b>SEMESTRE: </b>{{ items.semestre._text}}</p>
+        <br />
+        <p id="telefonoCelular"><b>TEL&Eacute;FONO CELULAR:</b>{{ items.celular._text }}</p>
+        <br />
+        <p id="correo"><b>CORREO:</b>{{ items.correo._text }}</p>
+      </article>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

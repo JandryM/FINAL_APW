@@ -1,0 +1,67 @@
+{
+  "estudiante": [
+    {
+      "nombree": "Juan",
+      "apellido": "Pérez",
+      "fechaNacimientO": "1990-05-15",
+      "NacionalidaD": "Ecuatoriana",
+      "DiscapacidaD": "Visual",
+      "carrera": "Tecnologia de Informacion",
+      "semestre": "9no Semestre"
+    },
+    {
+      "nombree": "María",
+      "apellido": "Gómez",
+      "fechaNacimientO": "1985-12-03",
+      "NacionalidaD": "Mexicana",
+      "DiscapacidaD": "Auditiva",
+      "carrera": "Arquitectura",
+      "semestre": "2do Semestre"
+    },
+    {
+      "nombree": "Carlos",
+      "apellido": "López",
+      "fechaNacimientO": "1992-08-21",
+      "NacionalidaD": "Colombiana",
+      "DiscapacidaD": "Motriz",
+      "carrera": "Medicina General",
+      "semestre": "7tmo Semestre"
+    },
+    {
+      "nombree": "Pablo",
+      "apellido": "Macias",
+      "fechaNacimientO": "2001-01-29",
+      "NacionalidaD": "Ecuatoriana",
+      "DiscapacidaD": "Intelectual",
+      "carrera": "Medicina General",
+      "semestre": "5to Semestre"
+    },
+    {
+      "nombree": "Martha",
+      "apellido": "Moreira",
+      "fechaNacimientO": "1999-10-19",
+      "NacionalidaD": "Ecuatoriana",
+      "DiscapacidaD": "Fisica",
+      "carrera": "Agropecuaria",
+      "semestre": "3er Semestre"
+    },
+    {
+      "nombree": "Monica",
+      "apellido": "Mendoza",
+      "fechaNacimientO": "2003-05-24",
+      "NacionalidaD": "Ecuatoriana",
+      "DiscapacidaD": "Visual",
+      "carrera": "Trabajo Social",
+      "semestre": "6to Semestre"
+    },
+    {
+      "nombree": "Camilo",
+      "apellido": "Zamora",
+      "fechaNacimientO": "1997-11-21",
+      "NacionalidaD": "Ecuatoriana",
+      "DiscapacidaD": "Multiple",
+      "carrera": "Ingeneria Electrica",
+      "semestre": "5to Semestre"
+    }
+  ]
+}

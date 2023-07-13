@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Inicar Sesion</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="nav">
+      <h2 class="logo">
+        <a href="https://www.uleam.edu.ec/"
+          ><img src="/assets/logo.png" alt="" class="img"
+        /></a>
+      </h2>
+      <nav>
+        <ul>
+          <li>
+            <a href="registro"><i class="fas fa-user-plus"></i>Registro</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <form class="form" id="form" [formGroup]="formLogin" (ngSubmit)="onSubmit()" (submit)="validarFormulario($event)">
+      <div class="contenedor">
+        <h1>Bienvenido</h1>
+        <div class="botons correo">
+          <p class="warnings"></p>
+          <input class="boton" formControlName="email" type="email" id="user" placeholder="E-mail" />
+          <label for="correo"></label>
+        </div>
+        <div class="botons pass">
+          <p class="warnings"></p>
+          <input formControlName="password"
+            class="boton"
+            type="password"
+            id="passw"
+            placeholder="Contraseña"
+          />
+          <label for="contraseña"></label>
+        </div>
+        <input class="control" type="submit" value="Iniciar Sesión" />
+        <input (click)="onClick()" class="control" type="submit" value="Continuar con Google" />
+        <p>
+          Aún no tienes una Cuenta?<a href="registro"><b>Crear Cuenta</b></a>
+        </p>
+      </div>
+    </form>
+  </body>
+</html>
